@@ -37,3 +37,19 @@ Open `index.html` in a browser. No installation or build step is required.
 
 Use relative asset paths such as `assets/images/profile.jpg` so they also work
 when the website is hosted under a repository path.
+
+## Diseño y scroll
+
+Versión con fondo oscuro, tipografía grande y proyectos que aparecen al bajar.
+Inspiración: https://electerious.com/ (implementación propia, sin copiar sus recursos).
+No requiere dependencias ni compilación. El contenido funciona sin JavaScript y
+las animaciones respetan la preferencia de movimiento reducido.
+
+- TODO: Cambia los tres proyectos de ejemplo y sus categorías en `index.html`.
+- TODO: Sustituye los visuales CSS por imágenes de tus proyectos.
+- TODO: Añade enlaces reales de cada proyecto y tu contacto.
+- TODO: Personaliza la presentación, habilidades y CV.
+
+Referencias opcionales de Electerious: [basicScroll](https://github.com/electerious/basicScroll)
+para parallax y [basicLightbox](https://github.com/electerious/basicLightbox)
+para ampliar imágenes. No se han incorporado estas librerías.

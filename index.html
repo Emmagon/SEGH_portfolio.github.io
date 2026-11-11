@@ -1,92 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- TODO: Add your name and a short description for search engines. -->
-  <meta name="description" content="My portfolio, projects, and experience.">
-  <title>Your Name | Portfolio</title>
+  <!-- TODO: Personaliza el título y la descripción. -->
+  <meta name="description" content="Portfolio personal: proyectos, ideas y experimentos.">
+  <title>Tu nombre — Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#projects">Saltar a los proyectos</a>
   <header class="container">
-    <!-- TODO: Replace with your name. -->
-    <a class="brand" href="#home">Your Name</a>
-    <nav aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
+    <!-- TODO: Añade tu nombre o marca personal. -->
+    <a class="brand" href="#home">tu nombre<span>®</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#projects">Proyectos</a><a href="#about">Sobre mí</a><a href="#contact">Contacto ↗</a>
     </nav>
   </header>
-
-  <main id="home" class="container">
-    <section class="intro" aria-labelledby="intro-title">
-      <!-- TODO: Add your professional title and introduction. -->
-      <p class="eyebrow">Your professional title</p>
-      <h1 id="intro-title">Hi, I'm Your Name.</h1>
-      <p>Write a sentence about what you do and what you enjoy building.</p>
-      <a class="button" href="#projects">Explore my projects</a>
-      <!-- TODO: Add assets/cv.pdf, then uncomment this download link.
-      <a class="button" href="assets/cv.pdf" download>Download my CV</a>
-      -->
+  <main id="home">
+    <section class="intro container" aria-labelledby="intro-title">
+      <!-- TODO: Cambia esta presentación por tu especialidad. -->
+      <p class="eyebrow">Portfolio personal / Ideas en movimiento</p>
+      <h1 id="intro-title">De la idea<br>a lo <span>real.</span></h1>
+      <div class="intro-bottom"><p>Soy <strong>Tu nombre</strong>. Este es mi espacio para compartir lo que construyo, lo que exploro y lo que viene después.</p><a href="#projects" class="scroll-link">Descubre mi trabajo <span aria-hidden="true">↓</span></a></div>
     </section>
-
-    <section id="about">
-      <h2>About me</h2>
-      <!-- TODO: Describe your background, interests, and goals.
-           Optional: Add a photo to assets/images/ and an img with descriptive alt text. -->
-      <p>Introduce yourself here.</p>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <!-- TODO: Replace these examples with your own skills. -->
-      <ul class="skills"><li>Skill one</li><li>Skill two</li><li>Skill three</li></ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects">
-        <!-- TODO: Duplicate this article for each project. -->
-        <article class="card">
-          <!-- TODO: Add a screenshot from assets/images/ with descriptive alt text. -->
-          <h3>Project title</h3>
-          <p>Describe the problem, your contribution, and the result.</p>
-          <p><strong>Tools:</strong> Add the technologies used.</p>
-          <!-- TODO: Uncomment and replace the URLs with your project links.
-          <a href="https://github.com/YOUR_USERNAME/YOUR_PROJECT">Source code</a>
-          <a href="https://YOUR_DEMO_URL">Live demo</a>
-          -->
-        </article>
-      </div>
-    </section>
-
-    <section id="experience">
-      <h2>Experience &amp; education</h2>
-      <!-- TODO: Duplicate this article for each role or degree; add dates. -->
-      <article>
-        <h3>Role or degree — Organization</h3>
-        <p>Dates · Describe your work, studies, or achievements.</p>
+    <section id="projects" class="container projects-section" aria-labelledby="projects-title">
+      <div class="section-heading"><h2 id="projects-title">Proyectos seleccionados</h2><span>01 — 03</span></div>
+      <!-- TODO: Sustituye los ejemplos por proyectos reales. Duplica un article para añadir más. -->
+      <article class="project reveal">
+        <!-- TODO: Sustituye este visual por una imagen: <img src="assets/images/proyecto-01.webp" alt="Descripción del proyecto"> -->
+        <div class="project-visual visual-one" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="sphere"></div><span class="visual-label">EXPERIMENTO / 001</span></div>
+        <div class="project-info"><span class="project-number">01</span><div><p class="eyebrow">Tu categoría · Año</p><h3>Nombre del proyecto</h3><p>¿Qué querías resolver? Cuenta brevemente qué construiste, cuál fue tu aportación y qué aprendiste.</p>
+        <!-- TODO: Añade enlaces reales al repositorio o demo.
+        <a class="text-link" href="https://github.com/TU_USUARIO/TU_PROYECTO">Explorar proyecto ↗</a>
+        --><span class="placeholder-label">Por completar · Proyecto de ejemplo</span></div></div>
+      </article>
+      <article class="project reveal">
+        <!-- TODO: Añade una captura o un vídeo de tu segundo proyecto. -->
+        <div class="project-visual visual-two" aria-hidden="true"><div class="window"><div class="window-top"><i></i><i></i><i></i></div><div class="window-content"><span></span><span></span><span></span><div class="bars"><b></b><b></b><b></b><b></b><b></b></div></div></div><span class="visual-label">EXPERIMENTO / 002</span></div>
+        <div class="project-info"><span class="project-number">02</span><div><p class="eyebrow">Tu categoría · Año</p><h3>Una nueva perspectiva</h3><p>Presenta aquí otro proyecto. Explica la idea, las herramientas que utilizaste y el resultado.</p><!-- TODO: Añade el enlace de este proyecto. --><span class="placeholder-label">Por completar · Proyecto de ejemplo</span></div></div>
+      </article>
+      <article class="project reveal">
+        <!-- TODO: Reemplaza este visual con material de tu tercer proyecto. -->
+        <div class="project-visual visual-three" aria-hidden="true"><div class="type-art">MAKE<br><span>IT REAL.</span></div><span class="visual-label">EXPERIMENTO / 003</span></div>
+        <div class="project-info"><span class="project-number">03</span><div><p class="eyebrow">Tu categoría · Año</p><h3>El siguiente paso</h3><p>Un espacio para otro trabajo, una colaboración o un experimento del que quieras hablar.</p><!-- TODO: Añade el enlace de este proyecto. --><span class="placeholder-label">Por completar · Proyecto de ejemplo</span></div></div>
       </article>
     </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Want to work together? Get in touch.</p>
-      <!-- TODO: Uncomment these links and replace all placeholders.
-      <a href="mailto:YOUR_EMAIL">Email</a>
-      <a href="https://github.com/YOUR_USERNAME">GitHub</a>
-      <a href="https://www.linkedin.com/in/YOUR_PROFILE/">LinkedIn</a>
+    <section id="about" class="container about reveal">
+      <p class="eyebrow">Un poco sobre mí</p><h2>Curiosidad para explorar.<br><span>Ideas para construir.</span></h2>
+      <!-- TODO: Cuenta tu formación, experiencia e intereses reales. -->
+      <div class="about-grid"><p>Aquí va tu historia: qué haces, cómo llegaste hasta aquí y qué tipo de proyectos te gustaría desarrollar.</p><div><h3>Herramientas &amp; habilidades</h3><!-- TODO: Sustituye estas etiquetas por tus habilidades. --><ul class="skills"><li>Tu habilidad 01</li><li>Tu habilidad 02</li><li>Tu habilidad 03</li></ul></div></div>
+      <!-- TODO: Añade assets/cv.pdf antes de activar el enlace.
+      <a class="text-link" href="assets/cv.pdf" download>Descargar CV ↗</a>
       -->
     </section>
+    <section id="contact" class="container contact reveal"><p class="eyebrow">¿Creamos algo juntos?</p><h2>Hablemos<span>↗</span></h2><p>Una idea, un proyecto o simplemente un hola.</p>
+      <!-- TODO: Añade tu email y LinkedIn. Ejemplo:
+      <a class="text-link" href="mailto:TU_EMAIL">Escríbeme ↗</a>
+      -->
+      <a class="text-link" href="https://github.com/Emmagon">Mi GitHub ↗</a>
+    </section>
   </main>
-
-  <footer class="container">
-    <!-- TODO: Replace Your Name with your name. -->
-    <p>&copy; <span id="year"></span> Your Name</p>
-  </footer>
+  <!-- TODO: Sustituye Tu nombre en el pie de página. -->
+  <footer class="container"><p>© <span id="year"></span> Tu nombre</p><a href="#home">Volver arriba ↑</a><p>Hecho con curiosidad.</p></footer>
 </body>
 </html>
