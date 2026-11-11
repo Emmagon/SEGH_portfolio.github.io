@@ -1,0 +1,44 @@
+/* TODO: Choose your portfolio colors, fonts, and spacing here. */
+:root {
+  --background: #f7f8fc;
+  --surface: #ffffff;
+  --text: #182238;
+  --muted: #536077;
+  --accent: #3156c9;
+  --border: #dce1ed;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--background);
+}
+.container { width: min(100% - 2rem, 1000px); margin-inline: auto; }
+a { color: var(--accent); text-underline-offset: 0.2em; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+header { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; padding-block: 1.5rem; }
+.brand { font-weight: 750; color: var(--text); text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+section { padding-block: 3rem; scroll-margin-top: 1rem; }
+.intro { padding-block: 5rem; max-width: 750px; }
+h1 { font-size: clamp(2.5rem, 7vw, 4.5rem); line-height: 1.1; margin-block: 1rem; }
+h2 { font-size: 2rem; line-height: 1.2; }
+h3 { line-height: 1.4; }
+p { color: var(--muted); }
+.eyebrow { color: var(--accent); font-weight: 650; }
+.button { display: inline-block; padding: 0.75rem 1.2rem; background: var(--accent); color: white; border-radius: 0.5rem; text-decoration: none; }
+.skills { display: flex; flex-wrap: wrap; gap: 0.75rem; padding: 0; list-style: none; }
+.skills li { padding: 0.4rem 1rem; border: 1px solid var(--border); border-radius: 2rem; }
+/* TODO: Adjust project card styles once you add your projects. */
+.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1.5rem; }
+.card { padding: 1.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; }
+img { display: block; max-width: 100%; height: auto; border-radius: 0.5rem; }
+footer { padding-block: 2rem; border-top: 1px solid var(--border); }
+/* TODO: Check your final content on both mobile and desktop screens. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
